@@ -1,0 +1,13 @@
+#user7
+create user7 user7 99000
+create user99 user99 900
+quit
+*
+#
+# test for user7 creation
+# test for user99 creation
+#
+Created user user7
+Created user user99
+Goodbye
+*

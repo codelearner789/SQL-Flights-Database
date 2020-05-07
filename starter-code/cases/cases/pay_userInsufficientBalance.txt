@@ -1,0 +1,21 @@
+# Single user tries to pay for a reservation but fails as one does not have enough money in account.
+#
+# user1
+create user1 user1 10
+login user1 user1
+search "New York NY" "Chicago IL" 1 1 1
+book 0
+reservations
+pay 1
+quit
+*
+Created user user1
+Logged in as user1
+Itinerary 0: 1 flight(s), 123 minutes
+ID: 1031898 Day: 1 Carrier: WN Number: 434 Origin: New York NY Dest: Chicago IL Duration: 123 Capacity: 17 Price: 738
+Booked flight(s), reservation ID: 1
+Reservation 1 paid: false:
+ID: 1031898 Day: 1 Carrier: WN Number: 434 Origin: New York NY Dest: Chicago IL Duration: 123 Capacity: 17 Price: 738
+User has only 10 in account but itinerary costs 738
+Goodbye
+*

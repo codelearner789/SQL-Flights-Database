@@ -1,0 +1,18 @@
+# Different users attempt to login from same terminal
+create user1 user1 1000
+create user2 user2 1000
+create user3 user3 1000
+login user1 user1
+login user2 user2
+login user3 user3
+quit
+*
+# ‘user1’ succeeds in logging in, rest fails
+Created user user1
+Created user user2
+Created user user3
+Logged in as user1
+User already logged in
+User already logged in
+Goodbye
+*

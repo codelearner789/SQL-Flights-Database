@@ -1,0 +1,9 @@
+# Single user tries to create account and succeeds
+create user1 user1 2048
+login user1 user1
+quit
+*
+Created user user1
+Logged in as user1
+Goodbye
+*

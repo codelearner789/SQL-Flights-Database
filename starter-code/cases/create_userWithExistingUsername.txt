@@ -1,0 +1,11 @@
+# User tries to create account with existing username
+# Fails to create an account with username
+create user1 user1 1000
+create user1 user1 1000
+quit
+*
+# Fails to create user in the second attempt
+Created user user1
+Failed to create user
+Goodbye
+*

@@ -1,0 +1,18 @@
+# Basic login attempt by user1
+login user1 user1
+quit
+*
+# Login fails as ‘user1’ does not exist
+Login failed
+Goodbye
+*
+# Create ‘user1’ and try to login
+create user1 user1 1000
+login user1 user1
+quit
+*
+# ‘user1’ created and login successful
+Created user user1
+Logged in as user1
+Goodbye
+*

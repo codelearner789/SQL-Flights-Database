@@ -1,0 +1,9 @@
+# User tries to see cancel reservation but fails as no user is logged in.
+create user1 user1 1000
+cancel 1
+quit
+*
+Created user user1
+Cannot cancel reservations, not logged in
+Goodbye
+*

@@ -1,0 +1,33 @@
+# Two terminals try to create one user and try to login.
+# One terminal succeeds in creating user while other fails.
+# Both terminals succeed in logging in.
+# Terminal 1
+create user1 user1 2000
+login user1 user1
+quit
+*
+# Terminal 1 succeeds in creating and logging in
+Created user user1
+Logged in as user1
+Goodbye
+|
+# Terminal 1 fails to create user but succeeds in logging in
+Failed to create user
+Logged in as user1
+Goodbye
+*
+# Terminal 2
+create user1 user1 2000
+login user1 user1
+quit
+*
+# Terminal 2 fails in creating user but succeeds in logging in
+Failed to create user
+Logged in as user1
+Goodbye
+|
+# Terminal 2 succeeds in creating and logging in
+Created user user1
+Logged in as user1
+Goodbye
+*

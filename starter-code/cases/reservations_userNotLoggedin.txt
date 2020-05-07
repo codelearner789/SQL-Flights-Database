@@ -1,0 +1,11 @@
+# Terminal 1 tries to see reservations but fails as no user is logged in.
+#
+# user1
+create user1 user1 1000
+reservations
+quit
+*
+Created user user1
+Cannot view reservations, not logged in
+Goodbye
+*

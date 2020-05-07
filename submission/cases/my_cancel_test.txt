@@ -1,0 +1,25 @@
+# user7 booking
+create user999 user999 1000000
+login user999 user999
+search "Seattle WA" "Los Angeles CA" 0 8 4
+book 0
+cancel 1
+quit
+*
+#
+# test reservation
+#
+Created user user999
+Logged in as user999
+Itinerary 0: 1 flight(s), 137 minutes
+ID: 484318 Day: 8 Carrier: UA Number: 703 Origin: Seattle WA Dest: Los Angeles CA Duration: 137 Capacity: 15 Price: 732
+Itinerary 1: 1 flight(s), 144 minutes
+ID: 66520 Day: 8 Carrier: AS Number: 292 Origin: Seattle WA Dest: Los Angeles CA Duration: 144 Capacity: 19 Price: 116
+Itinerary 2: 1 flight(s), 147 minutes
+ID: 486508 Day: 8 Carrier: UA Number: 771 Origin: Seattle WA Dest: Los Angeles CA Duration: 147 Capacity: 14 Price: 755
+Itinerary 3: 1 flight(s), 148 minutes
+ID: 1034190 Day: 8 Carrier: VX Number: 784 Origin: Seattle WA Dest: Los Angeles CA Duration: 148 Capacity: 17 Price: 508
+Booked flight(s), reservation ID: 1
+Canceled reservation 1
+Goodbye
+*

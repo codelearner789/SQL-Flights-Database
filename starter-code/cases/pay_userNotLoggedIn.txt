@@ -1,0 +1,11 @@
+# Terminal 1 tries to pay a reservation but fails as no user is logged in.
+#
+# user1
+create user1 user1 1000
+pay 1
+quit
+*
+Created user user1
+Cannot pay, not logged in
+Goodbye
+*

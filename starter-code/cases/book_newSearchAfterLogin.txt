@@ -1,0 +1,62 @@
+# Single user does a search without being logged in and tries to book. 
+# Booking fails. User logs in and does the search again with different 
+# dates. Booking succeeds but reserves a flight according to new search
+# user1
+create user1 user1 1000
+search "Seattle WA" "Boston MA" 0 1 10
+book 2
+login user1 user1
+search "Seattle WA" "Chicago IL" 1 1 10
+book 2
+reservations
+quit
+*
+Created user user1
+Itinerary 0: 2 flight(s), 252 minutes
+ID: 1034748 Day: 1 Carrier: WN Number: 392 Origin: Seattle WA Dest: St. Louis MO Duration: 110 Capacity: 19 Price: 431
+ID: 1035037 Day: 1 Carrier: WN Number: 392 Origin: St. Louis MO Dest: Boston MA Duration: 142 Capacity: 6 Price: 286
+Itinerary 1: 1 flight(s), 297 minutes
+ID: 60454 Day: 1 Carrier: AS Number: 24 Origin: Seattle WA Dest: Boston MA Duration: 297 Capacity: 14 Price: 140
+Itinerary 2: 1 flight(s), 297 minutes
+ID: 721557 Day: 1 Carrier: B6 Number: 1698 Origin: Seattle WA Dest: Boston MA Duration: 297 Capacity: 8 Price: 980
+Itinerary 3: 1 flight(s), 301 minutes
+ID: 706671 Day: 1 Carrier: AS Number: 734 Origin: Seattle WA Dest: Boston MA Duration: 301 Capacity: 11 Price: 268
+Itinerary 4: 1 flight(s), 303 minutes
+ID: 702979 Day: 1 Carrier: AS Number: 24 Origin: Seattle WA Dest: Boston MA Duration: 303 Capacity: 12 Price: 225
+Itinerary 5: 1 flight(s), 305 minutes
+ID: 717866 Day: 1 Carrier: B6 Number: 498 Origin: Seattle WA Dest: Boston MA Duration: 305 Capacity: 3 Price: 946
+Itinerary 6: 1 flight(s), 305 minutes
+ID: 721338 Day: 1 Carrier: B6 Number: 998 Origin: Seattle WA Dest: Boston MA Duration: 305 Capacity: 3 Price: 816
+Itinerary 7: 1 flight(s), 307 minutes
+ID: 702969 Day: 1 Carrier: AS Number: 12 Origin: Seattle WA Dest: Boston MA Duration: 307 Capacity: 4 Price: 739
+Itinerary 8: 1 flight(s), 310 minutes
+ID: 60108 Day: 1 Carrier: AS Number: 12 Origin: Seattle WA Dest: Boston MA Duration: 310 Capacity: 10 Price: 336
+Itinerary 9: 1 flight(s), 310 minutes
+ID: 717913 Day: 1 Carrier: B6 Number: 598 Origin: Seattle WA Dest: Boston MA Duration: 310 Capacity: 6 Price: 681
+Cannot book reservations, not logged in
+Logged in as user1
+Itinerary 0: 1 flight(s), 212 minutes
+ID: 485959 Day: 1 Carrier: UA Number: 754 Origin: Seattle WA Dest: Chicago IL Duration: 212 Capacity: 16 Price: 239
+Itinerary 1: 1 flight(s), 213 minutes
+ID: 1029192 Day: 1 Carrier: UA Number: 1998 Origin: Seattle WA Dest: Chicago IL Duration: 213 Capacity: 15 Price: 901
+Itinerary 2: 1 flight(s), 214 minutes
+ID: 490626 Day: 1 Carrier: UA Number: 942 Origin: Seattle WA Dest: Chicago IL Duration: 214 Capacity: 6 Price: 178
+Itinerary 3: 1 flight(s), 214 minutes
+ID: 647204 Day: 1 Carrier: AA Number: 1283 Origin: Seattle WA Dest: Chicago IL Duration: 214 Capacity: 11 Price: 584
+Itinerary 4: 1 flight(s), 215 minutes
+ID: 541818 Day: 1 Carrier: WN Number: 2220 Origin: Seattle WA Dest: Chicago IL Duration: 215 Capacity: 6 Price: 616
+Itinerary 5: 1 flight(s), 215 minutes
+ID: 702975 Day: 1 Carrier: AS Number: 20 Origin: Seattle WA Dest: Chicago IL Duration: 215 Capacity: 19 Price: 564
+Itinerary 6: 1 flight(s), 215 minutes
+ID: 1029135 Day: 1 Carrier: UA Number: 1949 Origin: Seattle WA Dest: Chicago IL Duration: 215 Capacity: 18 Price: 791
+Itinerary 7: 1 flight(s), 215 minutes
+ID: 1034720 Day: 1 Carrier: WN Number: 3060 Origin: Seattle WA Dest: Chicago IL Duration: 215 Capacity: 10 Price: 224
+Itinerary 8: 1 flight(s), 215 minutes
+ID: 1034721 Day: 1 Carrier: WN Number: 3951 Origin: Seattle WA Dest: Chicago IL Duration: 215 Capacity: 17 Price: 875
+Itinerary 9: 1 flight(s), 218 minutes
+ID: 1021828 Day: 1 Carrier: UA Number: 202 Origin: Seattle WA Dest: Chicago IL Duration: 218 Capacity: 9 Price: 187
+Booked flight(s), reservation ID: 1
+Reservation 1 paid: false:
+ID: 490626 Day: 1 Carrier: UA Number: 942 Origin: Seattle WA Dest: Chicago IL Duration: 214 Capacity: 6 Price: 178
+Goodbye
+*

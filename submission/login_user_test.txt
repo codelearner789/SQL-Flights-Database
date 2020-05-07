@@ -1,0 +1,19 @@
+#user7
+create user7 user7 99000
+create user99 user99 900
+login user99 user99
+login user7 user7
+quit
+*
+#
+# test for user7 creation
+# test for user99 creation
+# test for user99 login
+# test for user7 login
+#
+Created user user7
+Created user user99
+Logged in as user99
+User already logged in
+Goodbye
+*

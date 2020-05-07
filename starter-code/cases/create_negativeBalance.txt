@@ -1,0 +1,9 @@
+# User tries to create an account with negative balance.
+# Fails to create an account
+create user1 user1 -1
+quit
+*
+# ‘user1’ failed to create
+Failed to create user
+Goodbye
+*

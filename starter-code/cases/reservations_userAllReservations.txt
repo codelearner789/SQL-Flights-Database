@@ -1,0 +1,41 @@
+# User tries to view all the reservations made through the account
+#
+create user1 user1 1000
+login user1 user1
+search "Seattle WA" "New York NY" 1 1 5
+book 2
+search "Chicago IL" "Los Angeles CA" 0 2 5
+book 4
+reservations
+quit
+*
+Created user user1
+Logged in as user1
+Itinerary 0: 1 flight(s), 284 minutes
+ID: 717739 Day: 1 Carrier: B6 Number: 264 Origin: Seattle WA Dest: New York NY Duration: 284 Capacity: 7 Price: 846
+Itinerary 1: 1 flight(s), 290 minutes
+ID: 743843 Day: 1 Carrier: DL Number: 1542 Origin: Seattle WA Dest: New York NY Duration: 290 Capacity: 16 Price: 798
+Itinerary 2: 1 flight(s), 295 minutes
+ID: 74327 Day: 1 Carrier: B6 Number: 86 Origin: Seattle WA Dest: New York NY Duration: 295 Capacity: 11 Price: 195
+Itinerary 3: 1 flight(s), 295 minutes
+ID: 717842 Day: 1 Carrier: B6 Number: 464 Origin: Seattle WA Dest: New York NY Duration: 295 Capacity: 0 Price: 368
+Itinerary 4: 1 flight(s), 299 minutes
+ID: 3268 Day: 1 Carrier: AA Number: 260 Origin: Seattle WA Dest: New York NY Duration: 299 Capacity: 10 Price: 845
+Booked flight(s), reservation ID: 1
+Itinerary 0: 1 flight(s), 234 minutes
+ID: 463511 Day: 2 Carrier: UA Number: 111 Origin: Chicago IL Dest: Los Angeles CA Duration: 234 Capacity: 1 Price: 522
+Itinerary 1: 1 flight(s), 239 minutes
+ID: 1020561 Day: 2 Carrier: UA Number: 262 Origin: Chicago IL Dest: Los Angeles CA Duration: 239 Capacity: 6 Price: 939
+Itinerary 2: 1 flight(s), 239 minutes
+ID: 1036315 Day: 2 Carrier: WN Number: 237 Origin: Chicago IL Dest: Los Angeles CA Duration: 239 Capacity: 17 Price: 183
+Itinerary 3: 1 flight(s), 240 minutes
+ID: 463449 Day: 2 Carrier: UA Number: 109 Origin: Chicago IL Dest: Los Angeles CA Duration: 240 Capacity: 12 Price: 827
+Itinerary 4: 1 flight(s), 240 minutes
+ID: 543521 Day: 2 Carrier: WN Number: 2197 Origin: Chicago IL Dest: Los Angeles CA Duration: 240 Capacity: 12 Price: 720
+Booked flight(s), reservation ID: 2
+Reservation 1 paid: false:
+ID: 74327 Day: 1 Carrier: B6 Number: 86 Origin: Seattle WA Dest: New York NY Duration: 295 Capacity: 11 Price: 195
+Reservation 2 paid: false:
+ID: 543521 Day: 2 Carrier: WN Number: 2197 Origin: Chicago IL Dest: Los Angeles CA Duration: 240 Capacity: 12 Price: 720
+Goodbye
+*
